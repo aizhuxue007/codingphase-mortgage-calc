@@ -123,7 +123,7 @@ function updateInfo() {
     propertyTaxSpan = document.getElementsByClassName('info__numbers--property_taxes')[0].innerHTML = `$${monthlyPropertyTaxes}`;
     homeInsuranceSpan = document.getElementsByClassName('info__numbers--home_insurance')[0].innerHTML = `$${monthlyHomeInsurance}`;
     hoaSpan = document.getElementsByClassName('info__numbers--hoa')[0].innerHTML = `$${monthlyHOA}`;
-    totalSpan = document.getElementsByClassName('info__numbers--total')[0].innerHTML = `$${monthlyTotal}`;
+    totalSpan = document.getElementsByClassName('info__numbers--total')[0].innerHTML = `$${monthlyTotal.toFixed(2)}`;
 }
 
 function updateChart() {
